@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Love ❤️</title>
+
+<style>
+
+body{
+background: linear-gradient(to right,#ff758c,#ff7eb3);
+text-align:center;
+font-family: Arial;
+color:white;
+}
+
+h1{
+margin-top:40px;
+}
+
+#heart{
+font-size:120px;
+cursor:pointer;
+transition:0.3s;
+}
+
+#heart:hover{
+transform:scale(1.2);
+}
+
+#message{
+font-size:40px;
+margin-top:20px;
+font-weight:bold;
+}
+
+.gif{
+width:200px;
+margin:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Im getting Peelings😅
+  Touch My Heart babe❤️</h1>
+
+<img src="gif1.mp4" class="gif">
+
+<div id="heart" onclick="showLove()">❤️</div>
+
+<img src="gif2.mp4" class="gif">
+
+<p id="message"></p>
+
+<audio autoplay loop>
+<source src="music.mp3" type="audio/mp3">
+</audio>
+
+<script>
+
+function showLove(){
+
+var messages = [
+
+" Nenu nidra povalani try chestunna… kani naa mind motham
+  today mana moment daggare undi🫣 Two months distance tarvata
+  ninnu malli antha dheggara ga, chala close ga,chusina aa moment..
+  Naa heart ki chala special ga anipinchindi💓Mana little sweet KISS…
+  adi just oka kiss kaadhu, Romance ayithe asale kaadhu❌Aa moment lo
+  ee Two months distance lo miss ayina love, pain, feelings anni unnattu 
+  anipinchindi🥹Nuvvu na daggara unappudu nee warmth… even nee dhegara 
+  vache aa SMELL kuda nenu entha MISS ayyano realize ayyanu😫
+  Kani okati matram chala miss ayyanu… nee HUG🫂Konchem sepu
+  nee arms lo undipovali, Nenu neelaga smell vachentha varaku,
+  Ninu tight ga hug cheskovali ani chala anipinchindhi telsa😭
+  Today aa small moment naa heart ki oka peace ichindi..😌
+  Misunderstandings vasthunay,Chala pedha fights vasthay…
+  kani manam matladukoni solve chesukundam..
+  Kaani Please mana madhya malli ila distance ravakunda 
+  chooskundham🤌🏻❤️‍🔥🥺Because honestly nenu clear ga realize ayyanu…
+  naa heart ki sandhadi ga anipinchedi nee dhegara matrame ,
+  Chusav ga ni dhegara unte, Chinna pilla la entha matladthano,
+  entha allari chesthano😅So please… stay with me🫴🏻Happy moments lo 
+  matrame kaadhu… tough moments lo kuda👍🏻Mana love ni distance malli 
+  test cheyyakudadhu, Ok na bangaru, Im promising u,Mari nuvvu..!?🫵🏻🥹🫂"
+
+];
+
+var random = Math.floor(Math.random()*messages.length);
+
+document.getElementById("message").innerHTML=messages[random];
+
+}
+
+</script>
+
+</body>
+</html>
